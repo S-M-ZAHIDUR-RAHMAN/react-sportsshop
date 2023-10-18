@@ -6,17 +6,50 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Root from './Root/Root.jsx';
+import Home from './Home/Home.jsx';
+import Login from './Login/Login.jsx';
+import Register from './Register/Register.jsx';
+import AddProduct from './AddProduct/AddProduct.jsx';
+import MyCart from './MyCart/MyCart.jsx';
+import ErrorPage from './ErrorPage/ErrorPage.jsx';
+import AuthProvider from './Providers/AuthProvider.jsx';
+import PrivateRoute from './PrivateRoute/PrivateRoute.jsx';
+
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
+    children:[
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
+      },
+      {
+        path: "/addProduct",
+        element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>
+      },
+      {
+        path: "/myCart",
+        element: <PrivateRoute><MyCart></MyCart></PrivateRoute>
+      },
+    ]
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider><RouterProvider router={router} /></AuthProvider>
   </React.StrictMode>,
 )
