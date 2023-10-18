@@ -1,6 +1,9 @@
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
+import swal from "sweetalert";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import auth from "../firebase/firebase.config";
 
 
 const Login = () => {
@@ -33,6 +36,20 @@ const Login = () => {
             .catch(error => {
                 setRegisterLoginError(error.message);
             })
+    }
+    //Google
+    const provider = new GoogleAuthProvider();
+    const handleGoogleSignIn =()=>{
+        signInWithPopup(auth, provider)
+        .then(result => {
+            const user = result?.user;
+            console.log(user);
+            setSuccessLogin(swal("User logged in successfully!"))
+            navigate('/')
+        })
+        .catch(error => {
+            setRegisterLoginError(error.message);
+        })
     }
 
     return (
@@ -71,9 +88,9 @@ const Login = () => {
                 </div>
             </div>
                 <p className="flex justify-center">Yet to open an Account ? Please go to <span className="text-blue-700 underline"><Link to="/register">Register</Link></span></p>
-                {/* <div className="flex justify-center pb-2">
+                <div className="flex justify-center pb-2">
                     <button className="btn accent bg-yellow-400" onClick={handleGoogleSignIn}>Google Sign in</button>
-                </div> */}
+                </div>
             </div>
             
         </div>
