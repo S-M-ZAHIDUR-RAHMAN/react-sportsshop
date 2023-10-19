@@ -16,6 +16,7 @@ import ErrorPage from './ErrorPage/ErrorPage.jsx';
 import AuthProvider from './Providers/AuthProvider.jsx';
 import PrivateRoute from './PrivateRoute/PrivateRoute.jsx';
 import Products from './Products/Products.jsx';
+import Details from './Details/Details.jsx';
 
 
 
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <Root></Root>,
     errorElement: <ErrorPage></ErrorPage>,
-    children:[
+    children: [
       {
         path: "/",
         element: <Home></Home>,
@@ -48,9 +49,30 @@ const router = createBrowserRouter([
       },
       {
         path: "/brands/:id",
-        element: <PrivateRoute><Products></Products></PrivateRoute>,
-        loader: () => fetch('/hub.json')
+        element: <Products></Products>,
+        loader: async () => {
+          const loadOne = await fetch('/hub.json');
+          const loadTwo = await fetch('http://localhost:5000/product');
+
+          const brands = await loadOne.json();
+          const products = await loadTwo.json();
+
+          return { brands, products }
+        }
       },
+      {
+        path: "/details/:name",
+        element: <PrivateRoute><Details></Details></PrivateRoute>,
+        loader: async () => {
+          const loadOne = await fetch('/hub.json');
+          const loadTwo = await fetch('http://localhost:5000/product');
+
+          const brands = await loadOne.json();
+          const products = await loadTwo.json();
+
+          return { brands, products }
+        }
+      }
     ]
   },
 ]);
