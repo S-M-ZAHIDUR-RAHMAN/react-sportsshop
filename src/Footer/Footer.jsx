@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const Footer = () => {
     return (
-        <footer className="footer footer-center p-10 bg-pink-700 text-white">
+        <footer className="footer mt-10 footer-center p-10 bg-pink-700 text-white">
   <aside>
     
     <div className="normal-case text-white rounded-full py-1 px-4 text-xl font-extrabold bg-black"><span className="text-yellow-300">Sports</span>shop</div>
