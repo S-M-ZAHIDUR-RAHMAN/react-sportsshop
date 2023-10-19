@@ -15,6 +15,7 @@ import MyCart from './MyCart/MyCart.jsx';
 import ErrorPage from './ErrorPage/ErrorPage.jsx';
 import AuthProvider from './Providers/AuthProvider.jsx';
 import PrivateRoute from './PrivateRoute/PrivateRoute.jsx';
+import Products from './Products/Products.jsx';
 
 
 
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader: () => fetch('/hub.json')
       },
       {
         path: "/login",
@@ -43,6 +45,11 @@ const router = createBrowserRouter([
       {
         path: "/myCart",
         element: <PrivateRoute><MyCart></MyCart></PrivateRoute>
+      },
+      {
+        path: "/brands/:id",
+        element: <PrivateRoute><Products></Products></PrivateRoute>,
+        loader: () => fetch('/hub.json')
       },
     ]
   },
