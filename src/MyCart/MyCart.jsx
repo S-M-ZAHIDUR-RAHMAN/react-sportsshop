@@ -1,15 +1,17 @@
 import { useLoaderData } from "react-router-dom";
 import CartCards from "./CartCards";
+import { useState } from "react";
 
 
 const MyCart = () => {
 
     const cartProducts = useLoaderData();
+    const [products, setProducts] = useState(cartProducts)
 
     return (
         <div className="flex flex-col gap-4 pt-10">
             {
-                cartProducts && cartProducts?.map(cartProduct=><CartCards key={cartProduct._id} cartProduct={cartProduct}></CartCards>)
+                products && products?.map(cartProduct=><CartCards key={cartProduct._id} cartProduct={cartProduct} products={products} setProducts={setProducts}></CartCards>)
             }
         </div>
     );
