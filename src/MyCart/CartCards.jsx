@@ -48,7 +48,7 @@ const CartCards = ({ cartProduct, products, setProducts }) => {
             });
     }
     return (
-        <div className="card lg:mx-10 md:mx-10 mx-5 my-5 lg:card-side bg-base-100 shadow-xl">
+        <div className="card lg:mx-10 md:mx-10 mx-5 my-5 lg:card-side md:card-side bg-base-100 shadow-xl">
             <figure><img src={imageURL} alt="Album" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{name}</h2>

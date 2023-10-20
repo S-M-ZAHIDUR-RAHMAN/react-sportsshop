@@ -66,7 +66,7 @@ const Login = () => {
         <div className="hero-content flex-col lg:flex-row-reverse">
             <div className="text-center lg:text-left">
                 <h1 className="text-5xl font-bold">Login now!</h1>
-                <p className="py-6">You can login here and then get access to our awesome event services.</p>
+                <p className="py-6 hero-overlay text-white mt-2 p-2 text-2xl">You can login here and then get access to our awesome products of different global brands.</p>
             </div>
             <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                 <form onSubmit={handleLogin} className="card-body">
@@ -86,7 +86,7 @@ const Login = () => {
                         <input className="btn accent bg-yellow-400" type="submit" value="Login" />
                     </div>
                 </form>
-                <div>
+                <div className="text-center font-bold text-red-700">
                 {   
                 registerLoginError && <p>{registerLoginError}</p>
                 }
@@ -96,7 +96,7 @@ const Login = () => {
                 }
                 </div>
             </div>
-                <p className="flex justify-center">Yet to open an Account ? Please go to <span className="text-blue-700 underline"><Link to="/register">Register</Link></span></p>
+                <p className="text-center pb-2">Yet to open an Account ? Please go to <span className="text-blue-700 underline"><Link to="/register">Register</Link></span></p>
                 <div className="flex justify-center pb-2">
                     <button className="btn accent bg-yellow-400" onClick={handleGoogleSignIn}>Google Sign in</button>
                 </div>

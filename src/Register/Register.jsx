@@ -72,7 +72,7 @@ const Register = () => {
         <div className="hero-content flex-col lg:flex-row-reverse">
             <div className="text-center lg:text-left">
                 <h1 className="text-5xl font-bold">Register now!</h1>
-                <p className="py-6">You can register here and then get access to our awesome event services.</p>
+                <p className="py-6 hero-overlay text-white mt-2 p-2 text-2xl">You can register here and then get access to our awesome products of different global brands.</p>
             </div>
             <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                 <form onSubmit={handleRegister} className="card-body">
@@ -96,7 +96,7 @@ const Register = () => {
                         <input className="btn accent bg-yellow-400" type="submit" value="Register" />
                     </div>
                 </form>
-                <div>
+                <div className="text-center font-bold text-red-700">
                 {   
                 registerError && <p>{registerError}</p>
                 }
@@ -107,7 +107,7 @@ const Register = () => {
                 </div>
                 
             </div>
-                <p className="flex justify-center pb-4">Already have an account? Please go to <span className="text-blue-700 underline"><Link to="/login"> Login</Link></span></p>
+                <p className="text-center pb-4">Already have an account? Please go to <span className="text-blue-700 underline"><Link to="/login"> Login</Link></span></p>
             </div>
         </div>
     </div>
