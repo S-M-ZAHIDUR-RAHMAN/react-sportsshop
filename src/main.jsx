@@ -17,6 +17,7 @@ import AuthProvider from './Providers/AuthProvider.jsx';
 import PrivateRoute from './PrivateRoute/PrivateRoute.jsx';
 import Products from './Products/Products.jsx';
 import Details from './Details/Details.jsx';
+import Update from './Update/Update.jsx';
 
 
 
@@ -64,6 +65,19 @@ const router = createBrowserRouter([
       {
         path: "/details/:name",
         element: <PrivateRoute><Details></Details></PrivateRoute>,
+        loader: async () => {
+          const loadOne = await fetch('/hub.json');
+          const loadTwo = await fetch('http://localhost:5000/product');
+
+          const brands = await loadOne.json();
+          const products = await loadTwo.json();
+
+          return { brands, products }
+        }
+      },
+      {
+        path: "/update/:name",
+        element: <PrivateRoute><Update></Update></PrivateRoute>,
         loader: async () => {
           const loadOne = await fetch('/hub.json');
           const loadTwo = await fetch('http://localhost:5000/product');

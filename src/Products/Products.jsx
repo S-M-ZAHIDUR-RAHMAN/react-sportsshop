@@ -15,7 +15,7 @@ const Products = () => {
 
 
     useEffect(() => {
-        const findImages = brands?.find(brand => brand.id == id);
+        const findImages = brands?.find(brand => brand?.id == id);
         setAdImages(findImages);
     }, [id, brands])
 

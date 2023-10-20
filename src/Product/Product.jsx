@@ -30,7 +30,7 @@ const Product = ({ product }) => {
                         <div className="flex flex-row justify-between mt-4">
                         <Link to={`/details/${name}`}><button className="btn btn-accent">Details</button></Link>
                            
-                            <button className="btn btn-accent">Update</button>
+                        <Link to={`/update/${name}`}><button className="btn btn-accent">Update</button></Link>
                         </div>
                     </div>
                 </div>
