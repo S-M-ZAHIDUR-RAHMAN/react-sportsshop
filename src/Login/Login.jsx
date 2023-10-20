@@ -5,8 +5,17 @@ import swal from "sweetalert";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import auth from "../firebase/firebase.config";
 
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 const Login = () => {
+
+    useEffect(() => {
+        AOS.init();
+      }, []);
 
     const {signInUser} = useContext(AuthContext);
     const navigate = useNavigate();
@@ -55,7 +64,7 @@ const Login = () => {
     return (
         <div className="hero min-h-screen" data-aos="slide-up" data-aos-anchor-placement="top-center"data-aos-duration="linear">
         <div className="hero-content flex-col lg:flex-row-reverse">
-            <div className="text-center text-white lg:text-left">
+            <div className="text-center lg:text-left">
                 <h1 className="text-5xl font-bold">Login now!</h1>
                 <p className="py-6">You can login here and then get access to our awesome event services.</p>
             </div>

@@ -3,7 +3,12 @@ import { Link, useLoaderData, useParams } from "react-router-dom";
 import swal from "sweetalert";
 
 
+
+
+
 const Details = () => {
+
+    
 
     const [details, setDetails] = useState();
 
@@ -22,7 +27,7 @@ const Details = () => {
 
     const handleCart = () =>{
         //add product to cart in DB
-        fetch('http://localhost:5000/cart', {
+        fetch('https://sportsshop-server-nt42wikqd-s-m-zahidur-rahmans-projects.vercel.app/cart', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -40,9 +45,9 @@ const Details = () => {
 
     return (
         <div className="flex flex-col pl-5 pr-5 pb-5">
-            <div className="hero min-h-[70vh] flex flex-col rounded-md justify-end" style={detailsImageStyle} data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-duration="linear">
+            <div className="hero min-h-[70vh] flex flex-col rounded-md justify-end" style={detailsImageStyle}>
                 <div className="w-full bg-opacity-60">
-                    <div className="hero-overlay text-white animate-bounce text-3xl font-bold underline pl-5 py-5" data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-duration="linear">
+                    <div className="hero-overlay text-white animate-bounce text-3xl font-bold underline pl-5 py-5">
                         {details?.name}
                     </div>
                 </div>

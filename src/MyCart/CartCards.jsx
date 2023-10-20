@@ -28,7 +28,7 @@ const CartCards = ({ cartProduct, products, setProducts }) => {
             .then((willDelete) => {
                 if (willDelete) {
                     console.log('delete confirmed');
-                    fetch(`http://localhost:5000/cart/${id}`, {
+                    fetch(`https://sportsshop-server-nt42wikqd-s-m-zahidur-rahmans-projects.vercel.app/cart/${id}`, {
                         method: 'DELETE'
                     })
                         .then(res => res.json())

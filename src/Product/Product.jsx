@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
 
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 
 const Product = ({ product }) => {
@@ -14,6 +18,10 @@ const Product = ({ product }) => {
         rating
     } = product
     // console.log(_id);
+
+    useEffect(() => {
+        AOS.init();
+      }, []);
 
 
     return (

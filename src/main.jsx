@@ -47,14 +47,14 @@ const router = createBrowserRouter([
       {
         path: "/myCart",
         element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
-        loader: () => fetch('http://localhost:5000/cart')
+        loader: () => fetch('https://sportsshop-server-nt42wikqd-s-m-zahidur-rahmans-projects.vercel.app/cart')
       },
       {
         path: "/brands/:id",
         element: <Products></Products>,
         loader: async () => {
           const loadOne = await fetch('/hub.json');
-          const loadTwo = await fetch('http://localhost:5000/product');
+          const loadTwo = await fetch('https://sportsshop-server-nt42wikqd-s-m-zahidur-rahmans-projects.vercel.app/product');
 
           const brands = await loadOne.json();
           const products = await loadTwo.json();
@@ -67,7 +67,7 @@ const router = createBrowserRouter([
         element: <PrivateRoute><Details></Details></PrivateRoute>,
         loader: async () => {
           const loadOne = await fetch('/hub.json');
-          const loadTwo = await fetch('http://localhost:5000/product');
+          const loadTwo = await fetch('https://sportsshop-server-nt42wikqd-s-m-zahidur-rahmans-projects.vercel.app/product');
 
           const brands = await loadOne.json();
           const products = await loadTwo.json();
@@ -80,7 +80,7 @@ const router = createBrowserRouter([
         element: <PrivateRoute><Update></Update></PrivateRoute>,
         loader: async () => {
           const loadOne = await fetch('/hub.json');
-          const loadTwo = await fetch('http://localhost:5000/product');
+          const loadTwo = await fetch('https://sportsshop-server-nt42wikqd-s-m-zahidur-rahmans-projects.vercel.app/product');
 
           const brands = await loadOne.json();
           const products = await loadTwo.json();

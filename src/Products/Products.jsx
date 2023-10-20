@@ -15,7 +15,7 @@ const Products = () => {
 
 
     useEffect(() => {
-        const findImages = brands?.find(brand => brand?.id == id);
+        const findImages = brands?.find(brand => brand.id == id);
         setAdImages(findImages);
     }, [id, brands])
 
@@ -48,7 +48,7 @@ const Products = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-row justify-center mt-5 text-4xl hero-overlay py-4">
+            <div className="flex flex-row justify-center font-bold text-white mt-5 text-4xl hero-overlay py-4">
                 <h2>Available Products</h2>
             </div>
             <div className="grid grid-cols-1 mb-10 gap-4 lg:grid-cols-2 md:grid-cols-2">

@@ -1,57 +1,74 @@
 [
-    {
-      "id": 1,
-      "brand_name": "Nike",
-      "brand_image": "https://i.ibb.co/qmYyd6b/nike-logo.jpg",
-      "ad_image_one": "https://i.ibb.co/K23Mmnw/nike-ad-1.jpg",
-      "ad_image_two": "https://i.ibb.co/F3bsgWG/nike-ad-2.jpg",
-      "ad_image_three": "https://i.ibb.co/nLp3kvg/nike-ad-3.jpg",
-      "long_description": "The Nike Air Max 270 offers a super-soft ride that feels as impossible as it looks. With the first-ever Max Air unit that bends with the grooves in your forefoot, it's not only comfortable, it also moves with your every step."
-    },
-    {
-      "id": 2,
-      "brand_name": "Adidas",
-      "brand_image": "https://i.ibb.co/v1pHJZX/christian-wiediger-8d8-Kfp-YCQV0-unsplash.jpg",
-      "ad_image_one": "https://i.ibb.co/RDfphnL/adidas-ad-1.jpg",
-      "ad_image_two": "https://i.ibb.co/w4XJ2Pr/adidas-ad-2.jpg",
-      "ad_image_three": "https://i.ibb.co/jgj4Kgq/adidas-ad-3.jpg",
-      "long_description": "The Adidas Ultraboost 21 is all about maximizing comfort and energy return in your stride. It features a responsive Boost midsole and a Primeknit+ upper that adapts to your foot's shape, giving you a personalized fit."
-    },
-    {
-      "id": 3,
-      "brand_name": "Gucci",
-      "brand_image": "https://i.ibb.co/b6qZ92t/gucci-logo.jpg",
-      "ad_image_one": "https://i.ibb.co/TmvByvP/gucci-ad-1.jpg",
-      "ad_image_two": "https://i.ibb.co/jGBRvHz/gucci-ad-2.jpg",
-      "ad_image_three": "https://i.ibb.co/gWYpCzL/gucci-ad-3.jpg",
-      "long_description": "The Gucci Ace Sneakers are instantly recognizable with their distinctive embroidered details. They're crafted from premium leather and feature a comfortable rubber sole for all-day wear."
-    },
-    {
-      "id": 4,
-      "brand_name": "Zara",
-      "brand_image": "https://i.ibb.co/mFmLWBD/zara-logo.jpg",
-      "ad_image_one": "https://i.ibb.co/K64mTC9/zara-ad-1.jpg",
-      "ad_image_two": "https://i.ibb.co/vqZTy2W/zara-ad-2.jpg",
-      "ad_image_three": "https://i.ibb.co/nws1Lpr/zara-ad-3.jpg",
-      "long_description": "The Zara Faux Leather Biker Jacket is a versatile piece that adds an edge to any outfit. Made from high-quality faux leather, it features classic biker details and a comfortable fit."
-    },
-    {
-      "id": 5,
-      "brand_name": "H&M",
-      "brand_image": "https://i.ibb.co/mbJY83w/HnM-logo.jpg",
-      "ad_image_one": "https://i.ibb.co/B675VQ2/hnm-ad-1.jpg",
-      "ad_image_two": "https://i.ibb.co/v4yHGN6/hnm-ad-2.jpg",
-      "ad_image_three": "https://i.ibb.co/z2jdqZ3/hnm-ad-3.jpg",
-      "long_description": "The H&M Cotton Jersey Top is a versatile piece that offers both comfort and style. It's made from soft, breathable cotton and features a classic design that pairs well with any outfit."
-    },
-    {
-      "id": 6,
-      "brand_name": "Levi’s",
-      "brand_image": "https://i.ibb.co/0ncc4pV/levis-logo.jpg",
-      "ad_image_one": "https://i.ibb.co/bN5mcrn/levis-ad-1.jpg",
-      "ad_image_two": "https://i.ibb.co/q0QNvXn/levis-ad-2.jpg",
-      "ad_image_three": "https://i.ibb.co/yPpRDBB/levis-ad-3.jpg",
-      "long_description": "The Levi’s 501 Original Fit Jeans are a classic choice for a reason. They feature a straight leg and a mid-rise waist for a timeless look that pairs well with any outfit."
-    } 
-  ]
-  
+  {
+    "id": 1,
+    "brand_name": "Nike",
+    "brand_image": "https://i.ibb.co/qmYyd6b/nike-logo.jpg",
+    "ad_image_one": "https://i.ibb.co/K23Mmnw/nike-ad-1.jpg",
+    "ad_image_two": "https://i.ibb.co/F3bsgWG/nike-ad-2.jpg",
+    "ad_image_three": "https://i.ibb.co/nLp3kvg/nike-ad-3.jpg",
+    "test_image": "https://i.ibb.co/3TGDD8m/Sarah.png",
+    "name": "Sarah W.",
+    "testimonial": "I can't get enough of Sportsshop! The variety of top-notch brands like Nike, Adidas, Gucci, Levi's, H&M, and Zara under one roof is amazing. The quality, affordability, and exceptional customer service make this my go-to place for all things fashionable. Highly recommended!",
+    "long_description": "The Nike Air Max 270 offers a super-soft ride that feels as impossible as it looks. With the first-ever Max Air unit that bends with the grooves in your forefoot, it's not only comfortable, it also moves with your every step."
+  },
+  {
+    "id": 2,
+    "brand_name": "Adidas",
+    "brand_image": "https://i.ibb.co/v1pHJZX/christian-wiediger-8d8-Kfp-YCQV0-unsplash.jpg",
+    "ad_image_one": "https://i.ibb.co/RDfphnL/adidas-ad-1.jpg",
+    "ad_image_two": "https://i.ibb.co/w4XJ2Pr/adidas-ad-2.jpg",
+    "ad_image_three": "https://i.ibb.co/jgj4Kgq/adidas-ad-3.jpg",
+    "test_image": "https://i.ibb.co/JC6L5g2/James.png",
+    "name": "James R.",
+    "testimonial": "Sportsshop is my fashion paradise. I've found everything from the latest sportswear to high-end fashion pieces. The diverse collection and prompt delivery have made me a loyal customer. Thank you, Sportsshop!",
+    "long_description": "The Adidas Ultraboost 21 is all about maximizing comfort and energy return in your stride. It features a responsive Boost midsole and a Primeknit+ upper that adapts to your foot's shape, giving you a personalized fit."
+  },
+  {
+    "id": 3,
+    "brand_name": "Gucci",
+    "brand_image": "https://i.ibb.co/b6qZ92t/gucci-logo.jpg",
+    "ad_image_one": "https://i.ibb.co/TmvByvP/gucci-ad-1.jpg",
+    "ad_image_two": "https://i.ibb.co/jGBRvHz/gucci-ad-2.jpg",
+    "ad_image_three": "https://i.ibb.co/gWYpCzL/gucci-ad-3.jpg",
+    "test_image": "https://i.ibb.co/3TGDD8m/Sarah.png",
+    "name": "Emily L.",
+    "testimonial": "Shopping at Sportsshop is like a dream come true for fashion enthusiasts like me. The combination of renowned brands and trendy collections is fantastic. I'm always excited to see what's in store next!",
+    "long_description": "The Gucci Ace Sneakers are instantly recognizable with their distinctive embroidered details. They're crafted from premium leather and feature a comfortable rubber sole for all-day wear."
+  },
+  {
+    "id": 4,
+    "brand_name": "Zara",
+    "brand_image": "https://i.ibb.co/mFmLWBD/zara-logo.jpg",
+    "ad_image_one": "https://i.ibb.co/K64mTC9/zara-ad-1.jpg",
+    "ad_image_two": "https://i.ibb.co/vqZTy2W/zara-ad-2.jpg",
+    "ad_image_three": "https://i.ibb.co/nws1Lpr/zara-ad-3.jpg",
+    "test_image": "https://i.ibb.co/JC6L5g2/James.png",
+    "name": "Michael K.",
+    "testimonial": "Sportsshop has redefined my shopping experience. The ease of browsing through various brands and styles, along with detailed product descriptions, makes it a breeze to find the perfect outfit. The prices are competitive, and the service is impeccable. Two thumbs up!",
+    "long_description": "The Zara Faux Leather Biker Jacket is a versatile piece that adds an edge to any outfit. Made from high-quality faux leather, it features classic biker details and a comfortable fit."
+  },
+  {
+    "id": 5,
+    "brand_name": "H&M",
+    "brand_image": "https://i.ibb.co/mbJY83w/HnM-logo.jpg",
+    "ad_image_one": "https://i.ibb.co/B675VQ2/hnm-ad-1.jpg",
+    "ad_image_two": "https://i.ibb.co/v4yHGN6/hnm-ad-2.jpg",
+    "ad_image_three": "https://i.ibb.co/z2jdqZ3/hnm-ad-3.jpg",
+    "test_image": "https://i.ibb.co/3TGDD8m/Sarah.png",
+    "name": "Olivia M.",
+    "testimonial": "Sportsshop is my ultimate destination for fashion. With a wide range of brands, I can stay up-to-date with the latest trends. The seamless online shopping experience and quick deliveries have won me over. I'm a happy and satisfied customer!",
+    "long_description": "The H&M Cotton Jersey Top is a versatile piece that offers both comfort and style. It's made from soft, breathable cotton and features a classic design that pairs well with any outfit."
+  },
+  {
+    "id": 6,
+    "brand_name": "Levi’s",
+    "brand_image": "https://i.ibb.co/0ncc4pV/levis-logo.jpg",
+    "ad_image_one": "https://i.ibb.co/bN5mcrn/levis-ad-1.jpg",
+    "ad_image_two": "https://i.ibb.co/q0QNvXn/levis-ad-2.jpg",
+    "ad_image_three": "https://i.ibb.co/yPpRDBB/levis-ad-3.jpg",
+    "test_image": "https://i.ibb.co/JC6L5g2/James.png",
+    "name": "Daniel S.",
+    "testimonial": "Sportsshop has made my fashion choices exciting and affordable. I love that I can access premium brands like Gucci and Levi's without breaking the bank. Their exceptional customer support team is always ready to assist, making my shopping experience stress-free.",
+    "long_description": "The Levi’s 501 Original Fit Jeans are a classic choice for a reason. They feature a straight leg and a mid-rise waist for a timeless look that pairs well with any outfit."
+  }
+]

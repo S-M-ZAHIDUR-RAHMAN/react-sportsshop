@@ -4,9 +4,18 @@ import { AuthContext } from "../Providers/AuthProvider";
 import { updateProfile } from "firebase/auth";
 import swal from "sweetalert";
 
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Register = () => {
+
+    useEffect(() => {
+        AOS.init();
+      }, []);
+
+
     const {createUser, logOut} = useContext(AuthContext);
 
     const [registerError, setRegisterError] = useState('');
@@ -61,7 +70,7 @@ const Register = () => {
     return (
         <div className="hero min-h-screen" data-aos="slide-up" data-aos-anchor-placement="top-center"data-aos-duration="linear">
         <div className="hero-content flex-col lg:flex-row-reverse">
-            <div className="text-center text-white lg:text-left">
+            <div className="text-center lg:text-left">
                 <h1 className="text-5xl font-bold">Register now!</h1>
                 <p className="py-6">You can register here and then get access to our awesome event services.</p>
             </div>

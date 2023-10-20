@@ -9,10 +9,16 @@ const MyCart = () => {
     const [products, setProducts] = useState(cartProducts)
 
     return (
-        <div className="flex flex-col gap-4 pt-10">
-            {
-                products && products?.map(cartProduct=><CartCards key={cartProduct._id} cartProduct={cartProduct} products={products} setProducts={setProducts}></CartCards>)
-            }
+
+        <div>
+            <div className="flex flex-row justify-center mt-10 text-4xl text-white font-bold hero-overlay py-4">
+                <h2>My Cart</h2>
+            </div>
+            <div className="flex flex-col mt-10 gap-4 pt-10">
+                {
+                    products && products?.map(cartProduct => <CartCards key={cartProduct._id} cartProduct={cartProduct} products={products} setProducts={setProducts}></CartCards>)
+                }
+            </div>
         </div>
     );
 };

@@ -17,7 +17,7 @@ const AddProduct = () => {
         console.log(newProduct);
 
         //send data to the server
-        fetch('http://localhost:5000/product', {
+        fetch('https://sportsshop-server-nt42wikqd-s-m-zahidur-rahmans-projects.vercel.app/product', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -37,8 +37,10 @@ const AddProduct = () => {
 
 
     return (
-        <div className="p-24 flex flex-col items-center">
-            <h2 className="text-3xl font-extrabold">Add a Product</h2>
+        <div className="pt-5 lg:pt-10 md:pt-10 flex flex-col items-center">
+            <div className="flex flex-row justify-center mb-5 text-4xl text-white font-bold hero-overlay py-4">
+                <h2>Add a Product</h2>
+            </div>
 
             <form onSubmit={handleAddProduct}>
                 {/* Form Row */}
