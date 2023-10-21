@@ -1,4 +1,4 @@
-Website Name: Sportsshop (react-event-management)
+Website Name: Sportsshop (react-sports-shop)
 Website Link: https://react-sports-shop.web.app
 
 
