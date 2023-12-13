@@ -1,12 +1,29 @@
 import { useLoaderData } from "react-router-dom";
 import CartCards from "./CartCards";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { AuthContext } from "../Providers/AuthProvider";
+
 
 
 const MyCart = () => {
 
+
     const cartProducts = useLoaderData();
-    const [products, setProducts] = useState(cartProducts)
+    const [products, setProducts] = useState(cartProducts);
+
+
+    //These will be used to get the exact users cart info. will have to replace above two lines of code and do some change in the bellow codes.
+    // const {user} = useContext(AuthContext);
+    // const {displayName} = user;
+   
+    // const cartProducts = useLoaderData();
+    // const [products, setProducts] = useState([]);
+
+    // useEffect(() => {
+    //     const findMyCart = cartProducts?.find(product => product?.displayName === displayName);
+    //     setProducts(findMyCart || []);
+    // }, [displayName, cartProducts])
+    // console.log(products);
 
     return (
 

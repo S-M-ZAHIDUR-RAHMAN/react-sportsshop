@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
 
 
+
 import swal from "sweetalert";
+
 
 
 const CartCards = ({ cartProduct, products, setProducts }) => {
@@ -14,6 +16,7 @@ const CartCards = ({ cartProduct, products, setProducts }) => {
         rating,
         _id
     } = cartProduct
+   
 
     
     const handleDelete = id => {

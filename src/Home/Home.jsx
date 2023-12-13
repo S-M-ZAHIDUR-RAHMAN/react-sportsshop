@@ -42,7 +42,7 @@ const Home = () => {
             </div>
             <div className="flex flex-col items-center">
                 <div>
-                    <h2 className="flex justify-center text-4xl font-bold mb-8 lg:mb-10" data-aos="flip-up" data-aos-anchor-placement="top-center" data-aos-duration="600">Clients Testimonials</h2>
+                    <h2 className="flex justify-center text-center text-4xl font-bold mb-8 lg:mb-10" data-aos="flip-up" data-aos-anchor-placement="top-center" data-aos-duration="600">Clients Testimonials</h2>
                 </div>
                 <div className="grid grid-cols-1 gap-8 my-5">
                     {

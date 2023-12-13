@@ -8,7 +8,7 @@ const Update = () => {
 
     const { name } = useParams();
     const { brands, products } = useLoaderData();
-
+    console.log(products);
 
     useEffect(() => {
         const findProductToUpdate = products?.find(product => product?.name === name);

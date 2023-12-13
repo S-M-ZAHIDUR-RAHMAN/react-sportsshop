@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import swal from "sweetalert";
+import { AuthContext } from "../Providers/AuthProvider";
 
 
 
@@ -8,22 +9,27 @@ import swal from "sweetalert";
 
 const Details = () => {
 
-    
+    const {user} = useContext(AuthContext);
+    const{displayName} = user;
+    console.log(user.displayName);
+   
 
-    const [details, setDetails] = useState();
+    const [productDetails, setProductDetails] = useState();
 
     const { name } = useParams();
     const { brands, products } = useLoaderData();
 
     useEffect(() => {
         const findProductDetails = products?.find(product => product?.name === name);
-        setDetails(findProductDetails);
+        setProductDetails(findProductDetails);
     }, [name, products])
-    console.log(details);
+    console.log(productDetails);
 
     const detailsImageStyle = {
-        backgroundImage: `url(${details?.imageURL})`
+        backgroundImage: `url(${productDetails?.imageURL})`
     }
+    const details = {...productDetails, displayName};
+    console.log(details);
 
     const handleCart = () =>{
         //add product to cart in DB
